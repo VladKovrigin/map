@@ -1,5 +1,4 @@
 import React, {ChangeEventHandler, FocusEventHandler, HTMLInputTypeAttribute} from 'react';
-import BaseButton from "./BaseButton";
 
 interface BaseInputProps {
     baseChange?: ChangeEventHandler | undefined;

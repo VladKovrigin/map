@@ -73,6 +73,9 @@ export default function App() {
 
   return (
       <div className="app d-flex m-3 row">
+        <h1 className="d-flex justify-content-center mt-4">
+          Google maps React project
+        </h1>
         <PointList
             points={points}
             selectedPointId={selectedPointId}

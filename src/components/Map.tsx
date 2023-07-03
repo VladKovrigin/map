@@ -202,7 +202,8 @@ export default function Map({points, clickMap, clickMarker, selectedPointId, sel
     if (!isLoaded) {
         return (
             <div className="d-flex align-items-center justify-content-center mt-5">
-                <div className="spinner-border spinner" role="status"></div>
+                <div className="spinner-border spinner mr-2" role="status"></div>
+                Loading...
             </div>
         );
     }
@@ -225,7 +226,6 @@ export default function Map({points, clickMap, clickMarker, selectedPointId, sel
                     ))}
                 </GoogleMap>
             </div>
-
             {selectedPoint && (
                 <div className="d-flex flex-column col-lg-5 col-12">
                     <div className="input-group mb-5">
@@ -243,6 +243,7 @@ export default function Map({points, clickMap, clickMarker, selectedPointId, sel
                     </div>
 
                     <div className="mx-4 mb-2">
+
                         {selectedPointObjects.length ? (
                             <ObjectList
                                 objects={selectedPointObjects}

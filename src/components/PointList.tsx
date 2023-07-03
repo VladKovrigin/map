@@ -13,7 +13,7 @@ export default function PointList({points, onPointSelect, selectedPointId}: Poin
     };
 
     return (
-        <div className="col-lg-3 col-12 mb-3 mx-3 mt-5">
+        <div className="col-lg-3 col-12 mb-3 mx-3 mt-3">
             <select
                 className="form-select"
                 value={selectedPointId || ''}
