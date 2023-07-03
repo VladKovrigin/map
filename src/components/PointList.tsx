@@ -1,5 +1,5 @@
 import React from 'react';
-import {IPoint} from '../store/IPoint';
+import {IPoint} from '../interfaces/IPoint';
 
 interface PointListProps {
     points: IPoint[];

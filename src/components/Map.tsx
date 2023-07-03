@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {nanoid} from 'nanoid';
 import {GoogleMap, Marker, useJsApiLoader} from '@react-google-maps/api';
-import {IPoint} from "../store/IPoint";
+import {IPoint} from "../interfaces/IPoint";
 import ObjectList from './ObjectList';
 import BaseInput from './BaseInput';
 import BaseButton from './BaseButton';
@@ -236,7 +236,7 @@ export default function Map({points, clickMap, clickMarker, selectedPointId, sel
                         />
                         <div className="input-group-prepend">
                             <BaseButton
-                                text="Delete IPoint"
+                                text="Delete Point"
                                 baseClick={handleDeletePoint}
                             />
                         </div>

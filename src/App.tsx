@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Map from './components/Map';
-import { IPoint } from './store/IPoint';
+import { IPoint } from './interfaces/IPoint';
 import PointList from './components/PointList';
 
 export default function App() {
